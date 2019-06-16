@@ -902,7 +902,7 @@ guarantees about order of delivery with regard to bytes on other streams. On the
 wire, data is framed into QUIC STREAM frames, but this framing is invisible to
 the HTTP framing layer. The transport layer buffers and orders received QUIC
 STREAM frames, exposing the data contained within as a reliable byte stream to
-the application. Although QUIC permits out-of-order delivery within a stream
+the application. Although QUIC permits out-of-order delivery within a stream,
 HTTP/3 does not make use of this feature.
 
 QUIC streams can be either unidirectional, carrying data only from initiator to
@@ -2105,7 +2105,7 @@ Frame types defined by extensions to HTTP/2 need to be separately registered for
 HTTP/3 if still applicable.  The IDs of frames defined in {{!HTTP2}} have been
 reserved for simplicity.  Note that the frame type space in HTTP/3 is
 substantially larger (62 bits versus 8 bits), so many HTTP/3 frame types have no
-equivalent HTTP/2 code points.   See {{iana-frames}}.
+equivalent HTTP/2 code points.  See {{iana-frames}}.
 
 ## HTTP/2 SETTINGS Parameters {#h2-settings}
 
