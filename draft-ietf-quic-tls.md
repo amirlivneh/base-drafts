@@ -1398,8 +1398,8 @@ As described in Section 8 of {{!TLS13}}, use of TLS early data comes with an
 exposure to replay attack.  The use of 0-RTT in QUIC is similarly vulnerable to
 replay attack.
 
-Endpoints MUST implement and use the replay protections described in {{!TLS13}},
-however it is recognized that these protections are imperfect.  Therefore,
+Endpoints MUST implement and use the replay protections described in {{!TLS13}}.
+However, it is recognized that these protections are imperfect.  Therefore,
 additional consideration of the risk of replay is needed.
 
 QUIC is not vulnerable to replay attack, except via the application protocol
@@ -1756,7 +1756,7 @@ Issue and pull request numbers are listed with a leading octothorp.
 ## Since draft-ietf-quic-tls-20
 
 - Mandate the use of the QUIC transport parameters extension (#2528, #2560)
-- Define handshake completion and confirmation; define clearer rules when it
+- Define handshake completion and confirmation; define clearer rules for when
   encryption keys should be discarded (#2214, #2267, #2673)
 
 
@@ -1783,7 +1783,7 @@ Issue and pull request numbers are listed with a leading octothorp.
 - TLS provides an AEAD and KDF function (#2046)
   - Clarify that the TLS KDF is used with TLS (#1997)
   - Change the labels for calculation of QUIC keys (#1845, #1971, #1991)
-- Initial keys are discarded once Handshake are avaialble (#1951, #2045)
+- Initial keys are discarded once Handshake are available (#1951, #2045)
 
 
 ## Since draft-ietf-quic-tls-13
