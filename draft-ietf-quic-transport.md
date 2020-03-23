@@ -4112,7 +4112,7 @@ carries ACKs in either direction.
 The Initial packet contains a long header as well as the Length and Packet
 Number fields.  The first byte contains the Reserved and Packet Number Length
 bits.  Between the SCID and Length fields, there are two additional
-field specific to the Initial packet.
+fields specific to the Initial packet.
 
 Token Length:
 
@@ -6049,7 +6049,7 @@ The number of active streams is limited by the initial_max_streams_bidi and
 initial_max_streams_uni transport parameters, as explained in
 {{controlling-concurrency}}.  If chosen judiciously, these limits mitigate the
 effect of the stream commitment attack.  However, setting the limit too low
-could affect performance when applications expect to open large number of
+could affect performance when applications expect to open a large number of
 streams.
 
 
